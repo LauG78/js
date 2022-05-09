@@ -10,9 +10,32 @@
 // You will have time to focus on it later.
 
 (function() {
+    const x=document.getElementById("op-one").value; 
+    const y=document.getElementById("op-two").value;
+    let res=0;
     // to get the value of an input: document.getElementById("element-id").value
 
-    var performOperation = function(operation) {
+    var performOperation = function(operation) {  
+        switch (operation){
+            case"addition":
+                res=x+y;
+                alert("result is: "+res);
+                break;
+            case"substraction":
+                res=x-y;
+                alert("result is: "+res);
+                break;
+            case"multiplication":
+                res=x*y;
+                alert("result is: "+res);
+                break;
+            case"division":
+                res=x/y
+                alert("result is: "+res);
+                break;
+            default:
+                alert("unknown");
+        }
         // perform the operation
     };
 

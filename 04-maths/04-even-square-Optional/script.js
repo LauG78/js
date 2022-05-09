@@ -13,8 +13,13 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        for(i=1;i<=21;i++){
+            const sq= Math.sqrt(i);
+            const sqint=Math.floor(sq);
+            if(sq=sqint){
+                alert("square number: "+i);
+            else{}    
+            };// your code here
+    };
 
-    });
-
-})();
+})();})
