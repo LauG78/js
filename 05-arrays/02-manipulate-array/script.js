@@ -24,6 +24,10 @@
         "cerise",
     ];
 
-    // your code here
+    fruits.shift();
+    fruits.pop();
+    fruits.unshift("banana");
+    fruits.push("kiwi");
+    console.log("new fruits are: "+fruits)// your code here
 
 })();
