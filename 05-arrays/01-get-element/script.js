@@ -26,6 +26,8 @@
         "cherry",
     ];
 
-    // your code here
+    let btn=document.getElementById("run").addEventListener("click",fruit4())
+    function fruit4(){
+        console.log(fruits[3])}// your code here
 
 })();
