@@ -89,6 +89,10 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click",()=>{
+        var arrage = people.reduce((initialValue,person)=>initialValue+person.age,0)
+        console.log(arrage);
+    })
+        // your code here
 
 })();
