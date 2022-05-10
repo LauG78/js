@@ -90,5 +90,9 @@
     ];
 
     // your code here
-
+    let btn=document.getElementById('run').addEventListener('click', ()=>{
+        let ind=people.findIndex(person => person.firstname === "Jean" && person.lastname === "Dupont")
+        console.log(people[ind].email);
+        console.log(ind);
+    })
 })();
