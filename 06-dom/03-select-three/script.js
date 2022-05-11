@@ -10,7 +10,9 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    var every = document.querySelectorAll("p.target")
+    every.forEach((p)=> {p.textContent="owned"    
+    });
     // your code here
 
 })();
