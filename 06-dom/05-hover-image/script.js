@@ -10,6 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
+    let img = document.querySelector("img");
+    let orig_img = img.src;
+    let hover_img = img.getAttribute("data-hover");
+    img.onmouseover = ()=>{img.src=hover_img;}
+    img.onmouseout = ()=>{img.src=orig_img;}
 
     // your code here
 
