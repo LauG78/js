@@ -10,7 +10,13 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
+    let imgelem = document.getElementById("source")
+    let imgsrc =imgelem.getAttribute("data-image");//get the value of the attribute//
+    const newatribute=document.createElement("img");
+    newatribute.src=imgsrc;
+    document.querySelector("#target").appendChild(newatribute);//appending the child to target//
+    imgelem.remove();
+    
+     // your code here
 
 })();
