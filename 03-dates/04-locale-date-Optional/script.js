@@ -10,6 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
+    let d = new Date();
+    document.getElementById("target").innerHTML = d;
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
