@@ -10,6 +10,19 @@
 // You will have time to focus on it later.
 
 (function() {
+const target = document.querySelector("#target");
+const table = document.createElement("table");
+for(i=1;i<=10;i++){
+    const row = document.createElement("tr");
+    for(j=1;j<=10;j++){
+        const td = document.createElement("td");
+        td.style.border = "solid 1px black";
+        td.innerHTML = i*j;
+        row.appendChild(td);
+    }
+    table.appendChild(row);
+}
+target.appendChild(table);
 
     // your code here
 
