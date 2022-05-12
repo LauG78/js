@@ -10,7 +10,9 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
+    document.getElementById("pass-one").maxLength = 10;
+    document.getElementById("pass-one").addEventListener("input",()=>{
+        document.getElementById("counter").innerHTML = `${document.getElementById("pass-one").value.length}/10`;
+    })// your code here
 
 })();
