@@ -11,15 +11,14 @@
 
 (function() {
 
-    document.getElementById("run").addEventListener("click", function() {
-
+    document.getElementById("run").addEventListener("click",()=> {
         for(i=1;i<=21;i++){
-            const sq= Math.sqrt(i);
-            const sqint=Math.floor(sq);
-            if(sq=sqint){
-                alert("square number: "+i);
-            else{}    
-            };// your code here
-    };
-
-})();})
+            let a = Math.sqrt(i);
+            let b = Math.floor(a);
+            if(a=b){
+                console.log("square number: "+i);
+            }
+            else;    
+            // your code here
+        }
+})()})
